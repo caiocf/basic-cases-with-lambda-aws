@@ -21,3 +21,9 @@ There are two ways to set up your application with AWS LocalStack:
 2. Using the Terraform tool to automate resource creation (recommended option).
 
    More details [Running_With_LocalStack_Terraform](Running_With_LocalStack_Terraform.md)
+
+
+Topology:
+[image](diagram-basic-cases-lambda.png)
+
+![ topology app all  resources AWS](diagram-basic-cases-lambda.png)

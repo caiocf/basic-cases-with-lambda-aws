@@ -62,8 +62,3 @@ resource "aws_lambda_function" "terraform_lambda_func" {
   depends_on                     = [aws_iam_role_policy_attachment.attach_iam_policy_to_iam_role]
 
 }
-/*
-
-ENDPOINT=http://localhost:4567/restapis/7cs7led7z6/dev
-http://7cs7led7z6.execute-api.localhost.localstack.cloud:4566/dev/
-*/

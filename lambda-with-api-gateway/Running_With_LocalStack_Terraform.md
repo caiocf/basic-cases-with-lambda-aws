@@ -37,24 +37,24 @@ mvn clean install -f ../HelloWorldFunction/pom.xml
 ```sh
 terraform init
 terraform apply
+
+Apply complete! Resources: 12 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+base_url_default_aws = "https://mv74g27mak.execute-api.us-east-1.amazonaws.com/dev"
+base_url_localstack = "http://mv74g27mak.execute-api.localhost.localstack.cloud:4566/dev"
 ```
 
-### Invoker if your Lambda app has been installed correctly
+### Invoker if your Lambda app has been installed correctly by Curl
 
 ```sh
-aws --endpoint http://localhost:4566 --profile localstack lambda invoke --function-name HelloWorldTerraform outTerraform.txt --log-type Tail
-```
+curl -X POST "http://7cs7led7z6.execute-api.localhost.localstack.cloud:4566/dev"
+{ "message": "hello world", "location": "189.15.109.193" }
 
-If this is correct, the file content will be
-```json
-{
-  "body":"{ \"message\": \"hello world\", \"location\": \"189.15.109.193\" }",
-  "headers":{
-    "Content-Type":"application/json",
-    "X-Custom-Header":"application/json"
-  },
-  "statusCode":200
-}
+
+curl -X GET "http://7cs7led7z6.execute-api.localhost.localstack.cloud:4566/dev"
+{ "message": "hello world", "location": "189.15.109.193" }
 ```
 
 
