@@ -1,0 +1,11 @@
+/.aws-sam/
+/lambda-with-api-gateway.iml
+/terraform_stack/.terraform/
+/terraform_stack/target/
+/terraform_stack/*.tfstate
+/HelloWorldFunction/target/
+/HelloWorldFunction/HelloWorld.iml
+/HelloWorldFunction/.aws-sam/
+/.idea/
+/terraform_stack/terraform.tfstate.backup
+/terraform_stack/.terraform.lock.hcl
