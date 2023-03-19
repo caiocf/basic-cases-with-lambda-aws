@@ -23,7 +23,6 @@ There are two ways to set up your application with AWS LocalStack:
    More details [Running_With_LocalStack_Terraform](Running_With_LocalStack_Terraform.md)
 
 
-Topology:
-[image](diagram-basic-cases-lambda.png)
+## Topology:
 
 ![ topology app all  resources AWS](diagram-basic-cases-lambda.png)
